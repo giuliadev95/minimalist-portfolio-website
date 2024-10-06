@@ -17,38 +17,49 @@
   <title>Frontend Mentor | Minimalist Portfolio</title>
 </head>
 <body>
-  <header id="header">
-    <!-- Hamburger Menu for Smartphones -->
-    <div class="navigation-menu-wrapper">
-      <a href="/index.html" id="logo" aria-label="Homepage" tabindex="0">
-          <svg xmlns="http://www.w3.org/2000/svg" width="61" height="32"><path fill="#33323D" fill-rule="evenodd" d="M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z"/></svg>
-      </a>
-      <!-- Button: Open Hamburger Menu & Close Hamburger Menu -->
-      <button class="hamburger-container"  type="button" aria-label="Toggle menu" tabindex="0">  
-          <span class="hamburger-bar-1"></span>
-          <span class="hamburger-bar-2"></span>
-          <span class="hamburger-bar-3"></span>
-      </button>
-    </div>
-    <!-- Navigation links to display in the Hamburger Menu -->
-    <ul class="navigation-links">
-      <li> <a href="./index.html" tabindex="0"> HOME</a> </li>
-      <li> <a href="#about" tabindex="0"> ABOUT</a> </li>
-      <li> <a href="#portfolio" tabindex="0"> PORTFOLIO</a> </li>
-      <li> <a href="#contact" tabindex="0"> CONTACT</a> </li>
-    </ul>
-    <!-- Tablet and Smartphones Navigation Menu -->
+    <header id="header">
+      <!-- Hamburger Menu for Smartphones -->
+      <div class="navigation-menu-wrapper">
+        <a href="/index.html" id="logo" aria-label="Homepage" tabindex="0">
+            <svg xmlns="http://www.w3.org/2000/svg" width="61" height="32"><path fill="#33323D" fill-rule="evenodd" d="M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z"/></svg>
+        </a>
 
-  </header>
-  <main id="main">
-    <section id="about"> 
-    </section>
-    <section id="portfolio"> 
-    </section>
-    <section id="contact">
-    </section>
-  </main>
-  <footer id="footer"></footer>
-  <script src="./script.js"></script>
+        <!-- Desktop Navigation Menu for Tablets and Laptops -->
+      <ul class="desktop-navigation-links">
+        <li> <a href="./index.html" tabindex="0"> HOME</a> </li>
+        <li> <a href="#about" tabindex="0"> ABOUT</a> </li>
+        <li> <a href="#portfolio" tabindex="0"> PORTFOLIO</a> </li>
+        <li> <a href="#contact" tabindex="0"> CONTACT</a> </li>
+      </ul>
+
+        <!-- Button: Open Hamburger Menu & Close Hamburger Menu -->
+        <button class="hamburger-container"  type="button" aria-label="Toggle menu" tabindex="0">  
+            <span class="hamburger-bar-1"></span>
+            <span class="hamburger-bar-2"></span>
+            <span class="hamburger-bar-3"></span>
+        </button>
+      </div>
+      <!-- Navigation links to display in the Hamburger Menu -->
+      <ul class="navigation-links">
+        <li> <a href="./index.html" tabindex="0"> HOME</a> </li>
+        <li> <a href="#about" tabindex="0"> ABOUT</a> </li>
+        <li> <a href="#portfolio" tabindex="0"> PORTFOLIO</a> </li>
+        <li> <a href="#contact" tabindex="0"> CONTACT</a> </li>
+      </ul>
+    </header>
+    <main id="main">
+      <section id="about">
+        <img src="./images/homepage/mobile/image-homepage-hero@2x.jpg" class="hero-image" alt=""/>
+          <div class="red-box">
+            <div class="green-box"></div>
+          </div>    
+      </section>
+      <section id="portfolio"> 
+      </section>
+      <section id="contact">
+      </section>
+    </main>
+    <footer id="footer"></footer>
+    <script src="./script.js"></script>
 </body>
 </html>

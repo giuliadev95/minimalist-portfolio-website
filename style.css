@@ -17,6 +17,13 @@
 *{
     /*border: 1px solid red;*/
     scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 40px;
 }
 
 a, button{

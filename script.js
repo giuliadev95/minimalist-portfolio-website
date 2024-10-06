@@ -1,3 +1,4 @@
+/* SHOW/HIDE HAMBURGER MENU */
 document.addEventListener("DOMContentLoaded", function() {
     const HAMBURGER_ICON = document.querySelector(".hamburger-container");
     const HEADER = document.getElementById("header");
@@ -30,4 +31,27 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+
+/* CHANGE SOURCE OF HERO IMAGE ON DESKTOP */
+var desktop_image = document.querySelector(".hero-image");
+function replacePattern() {
+
+    var windowWidth = window.innerWidth || document.documentElement.clientWidth;
+    console.log(desktop_image.src);
+
+    if(windowWidth >= 768) {
+        desktop_image.src = "./images/homepage/tablet/image-homepage-hero@2x.jpg"
+        console.log(desktop_image.src);
+    }
+    else if (windowWidth >= 1024) {
+        desktop_image.src= "./images/homepage/desktop/image-homepage-hero@2x.jpg";
+        console.log(desktop_image.src);
+    }
+}
+
+replacePattern();
+window.addEventListener('resize', replacePattern);
+
+
 

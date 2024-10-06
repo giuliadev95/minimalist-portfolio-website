@@ -1,12 +1,26 @@
+#header {
+    margin-top: 40px;
+}
+
 #header.active {
     height: 100vh;
 }
+
+/*  ---------------
+    NAVIGATION MENU
+    --------------- */
 
 .navigation-menu-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 30px;}
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+/*  -----
+    LOGO
+    ----- */
 
 #logo {
     background-color: none;
@@ -19,24 +33,28 @@
     {
     border: 3px solid var(--slightly-desaturated-cyan);
     outline: none;
+    border-radius: 2px;
 }
 
 @keyframes float {
     0% {
-        transform: translateY(0); /* Posizione di partenza */
+        transform: translateY(0);
     }
     50% {
-        transform: translateY(-5px); /* Muovi il logo verso l'alto */
     }
 
     50% {
-        transform: translateY(+7px); /* Muovi il logo verso l'alto */
+        transform: translateY(+7px); 
     }
     
     100% {
-        transform: translateY(0); /* Torna alla posizione di partenza */
+        transform: translateY(0); 
     }
 }
+
+/*  --------------
+    HAMBURGER MENU
+    -------------- */
 
 .hamburger-container {
     padding: 0px;
@@ -48,6 +66,7 @@
 .hamburger-container:focus-visible {
     border: 3px solid var(--slightly-desaturated-cyan);
     outline: none;
+    border-radius: 2px;
 }
 
 .hamburger-container > span {
@@ -74,16 +93,16 @@
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-
-
-
 .navigation-links {
-    height: 300px;
-    padding: 60px;
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
     align-self: center;
     background-color: var(--grayish-dark-blue);
-    transition: all 0.5s ease;
+    transition: opacity 0.5s ease, visibility 0.5s ease, height 0.5s ease, padding 0.5s ease;
 }
 
 li {
@@ -93,14 +112,25 @@ li {
 }
     
 .navigation-links.active {
-    display: block;
-    height: 500px;  
-    padding: 60px
+    opacity: 1;
+    visibility: visible;
+    height: 300px;
+    padding: 60px;
+    transition: opacity 0.5s ease, visibility 0.5s ease, height 0.5s ease, padding 0.5s ease;
 }
 
+.navigation-links:not(.active) {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease, height 0.5s ease, padding 0.5s ease;
+}
 .navigation-links a {
         display: inline-block;
         width: 100%;
+        margin: 0px;
+        border-radius: 2px;
         font-family: "Public Sans", system-ui;
         font-size: 16px;
         font-optical-sizing: auto;
@@ -111,14 +141,105 @@ li {
         color: var(--white);
     }
 
-    .navigation-links a:hover, .navigation-links a:focus-visible {
-        background-color: var(--slightly-desaturated-cyan);
-        outline: none;
+.navigation-links a:hover, .navigation-links a:focus-visible {
+    background-color: var(--slightly-desaturated-cyan);
+    outline: none;
+}
+
+/*  ---------------------
+    TABLET / DESKTOP MENU
+    --------------------- */
+
+.desktop-navigation-links {
+    display:none;
+}
+
+
+.desktop-navigation-links a {
+    text-decoration: none;
+    font-family: "Public Sans", system-ui;
+    font-size: 16px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    color: var(--grayish-dark-blue);
+}
+
+.desktop-navigation-links a:focus-visible {
+    padding: 5px;
+    outline: none;
+    border: 3px solid var(--slightly-desaturated-cyan);
+    border-radius: 2px;
+}
+ 
+.desktop-navigation-links a:hover {
+      color: var(--slightly-desaturated-cyan);
     }
 
+/*  ---------------------
+    MAIN / HERO SECTION
+    --------------------- */
 
+.hero-image {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-color: none;
+}
 
+.red-box {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(213, 24, 68);
+}
 
+.green-box {
+    display: none;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+}
 
+/*  -------------------------------------
+    MEDIA QUERY FOR TABLETS AND DESKTOPS
+    ------------------------------------- */
+    
+@media screen and (min-width: 768px) {
+    .hamburger-container {
+        display: none;
+    }
 
+    .desktop-navigation-links {
+        display: flex;
+        column-gap: 30px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+    
+    .red-box {
+        width: 500px;
+        height: 200px;
+        background-color: rgb(213, 24, 68);
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+    
+    .green-box {
+        display: block;
+        width: 100px;
+        height: 50px;
+        background-color: green;
+    }
+    
+
+}
 
