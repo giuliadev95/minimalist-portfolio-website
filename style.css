@@ -15,10 +15,10 @@
 }
 
 *{
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     scroll-behavior: smooth;
 }
 
-a {
+a, button{
     cursor: pointer;
 }

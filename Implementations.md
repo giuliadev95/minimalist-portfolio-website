@@ -25,8 +25,6 @@
   Contact Me
 
 **JavaScript Implementations**
-- add tabindex=0 attribute to li. a herfs, only when on .active class
-- put animation on li. a hrefs on :hover 
 - create the mouse = cicrle-pointer 
 
 **DOING NOW:**
