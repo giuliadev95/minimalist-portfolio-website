@@ -3,22 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- favicon -->
+  <!-- Link to favicon -->
   <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png">
-  <!-- links to style.css and Google Fonts -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <!-- Link to stylesheets -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./styles/header.css">
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <!-- Link to Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@600&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Minimalist Portfolio</title>
 </head>
 <body>
-  <header id="header"></header>
-  <main id="main"></main>
+  <header id="header">
+    <!-- Hamburger Menu for Smartphones -->
+    <div class="navigation-menu-wrapper">
+      <a href="/minimalist-portfolio/index.html" id="logo" aria-label="Homepage" tabindex="0">
+          <svg xmlns="http://www.w3.org/2000/svg" width="61" height="32"><path fill="#33323D" fill-rule="evenodd" d="M60.082 5.878L44.408 32 28.735 5.878h31.347zM15.673 0l15.674 26.122H0L15.673 0z"/></svg>
+      </a>
+      <!-- Button: Open Hamburger Menu & Close Hamburger Menu -->
+      <button class="hamburger-container"  type="button" aria-label="Toggle menu" tabindex="0">  
+          <span class="hamburger-bar-1"></span>
+          <span class="hamburger-bar-2"></span>
+          <span class="hamburger-bar-3"></span>
+      </button>
+    </div>
+    <!-- Navigation links to display in the Hamburger Menu -->
+    <ul class="navigation-links">
+      <li> <a href="./index.html" tabindex="0"> HOME</a> </li>
+      <li> <a href="#about" tabindex="0"> ABOUT</a> </li>
+      <li> <a href="#portfolio" tabindex="0"> PORTFOLIO</a> </li>
+      <li> <a href="#contact" tabindex="0"> CONTACT</a> </li>
+    </ul>
+    <!-- Tablet and Smartphones Navigation Menu -->
+
+  </header>
+  <main id="main">
+    <section id="about"> 
+      <h2>About Me</h2>
+    </section>
+    <section id="portfolio"> 
+      <h2>My Portfolio</h2>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+    </section>
+  </main>
   <footer id="footer"></footer>
-  <script src="./app.js"></script>
-  <script src="./js/header.js"></script>
-  <script src="./js/main.js"></script>
-  <script src="./js/footer.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>

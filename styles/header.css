@@ -1,0 +1,104 @@
+#header.active {
+    height: 100vh;
+}
+
+.navigation-menu-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    #logo {
+        background-color: none;
+        display: inline-block;
+        animation: float 3s ease-in-out infinite;
+        animation-iteration-count: 5;
+    }
+
+    @keyframes float {
+        0% {
+            transform: translateY(0); /* Posizione di partenza */
+        }
+        50% {
+            transform: translateY(-5px); /* Muovi il logo verso l'alto */
+        }
+
+        50% {
+            transform: translateY(+7px); /* Muovi il logo verso l'alto */
+        }
+        
+        100% {
+            transform: translateY(0); /* Torna alla posizione di partenza */
+        }
+    }
+    
+        
+    .hamburger-container {
+        padding: 0px;
+        background: none;
+        border: none;
+    
+        span {
+            display: block;
+            width: 35px;
+            height: 2px;
+            background-color: black;
+            margin: 6px 0;
+            border-radius: 2px;
+            transition: transform 0.5s ease, opacity 0.5s ease;
+
+        }
+
+        &.active {
+            .hamburger-bar-1 {
+                transform: rotate(45deg) translate(5px, 5px);
+            }
+        
+            .hamburger-bar-2 {
+                display: none;
+            }
+        
+            .hamburger-bar-3 {
+                transform: rotate(-45deg) translate(5px, -5px);
+            }
+        }
+    }
+}
+
+.navigation-links {
+    height: 300px;
+    padding: 60px;
+    display: none;
+    align-self: center;
+    background-color: var(--grayish-dark-blue);
+
+    li {
+        margin-bottom:25px;
+        list-style: none;
+        text-align: center;
+    }
+    
+    &.active {
+        display: block;
+        height: 500px;  
+    }
+    a {
+        display: inline-block;
+        width: 100%;
+        font-family: "Public Sans", system-ui;
+        font-size: 16px;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 30px;
+        text-decoration: none;
+        color: var(--white);
+
+    }
+}
+
+
+
+
+
+

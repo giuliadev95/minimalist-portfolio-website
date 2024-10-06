@@ -1,0 +1,24 @@
+:root {
+    --white: #ffff;
+    --slightly-desaturated-cyan: #5FB4A2;
+    --dark-blue: #203A4C;
+    --grayish-dark-blue: #33323D;
+    
+    --very-light-grey-bg: #FAFAFA;
+    --light-grey-text-field: #EAEAEB;
+    --bright-red-errors: #F43030;
+    
+    --headings-text: "Ibarra Real Nova", system-ui;
+    --body-text: "Public Sans", sans-serif;
+    --bold: 600;
+    --norma: normal;
+}
+
+*{
+    border: 1px solid red;
+    scroll-behavior: smooth;
+}
+
+a {
+    cursor: pointer;
+}
