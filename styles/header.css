@@ -182,10 +182,8 @@ li {
     --------------------- */
 
 .hero-image {
-    display: none;
-    width: 100px;
-    height: 100px;
-    background-color: none;
+    width: 100%;
+    height: auto;
 }
 
 .red-box {

@@ -38,15 +38,18 @@ var desktop_image = document.querySelector(".hero-image");
 function replacePattern() {
 
     var windowWidth = window.innerWidth || document.documentElement.clientWidth;
+    console.clear();
     console.log(desktop_image.src);
 
-    if(windowWidth >= 768) {
+    if(windowWidth >= 768 && windowWidth < 1024) {
         desktop_image.src = "./images/homepage/tablet/image-homepage-hero@2x.jpg"
         console.log(desktop_image.src);
     }
     else if (windowWidth >= 1024) {
         desktop_image.src= "./images/homepage/desktop/image-homepage-hero@2x.jpg";
         console.log(desktop_image.src);
+    } else {
+        desktop_image.src = " ./images/homepage/mobile/image-homepage-hero@2x.jpg"
     }
 }
 
