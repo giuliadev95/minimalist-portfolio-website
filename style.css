@@ -29,3 +29,44 @@ body {
 a, button{
     cursor: pointer;
 }
+
+h1 {
+    font-family: "Ibarra Real Nova", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal; 
+    font-size: 50px;
+    line-height: 50px;
+    color: (var((--grayish-dark-blue)));
+}
+
+h2 {
+    font-family: "Ibarra Real Nova", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal; 
+    font-size: 40px;
+    line-height: 42px;
+    margin: 40px 0px;
+    color: var(--grayish-dark-blue);
+}
+
+.top-line {
+    margin-top: 40px;
+    background-color: var(--light-grey-text-field);
+}
+
+.bottom-line {
+    background-color: var(--light-grey-text-field);
+}
+
+.about-me-paragraph {
+    font-family: "Public Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    line-height: 30px ;
+    font-size: 18px;
+    color: var(--dark-blue);
+    margin: 0;
+}

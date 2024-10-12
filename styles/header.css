@@ -186,18 +186,67 @@ li {
     height: auto;
 }
 
-.red-box {
-    display: none;
-    width: 100px;
-    height: 100px;
-    background-color: rgb(213, 24, 68);
+.text-box {
+    display: block;
+   /* width: 100px; */
+    width: 100%;
+    height: auto;
+   /* background-color: rgb(213, 24, 68); */
 }
 
-.green-box {
-    display: none;
-    width: 100px;
-    height: 100px;
-    background-color: green;
+.go-to-about-me {
+    width: 150px;
+    height: 50px;
+    position: relative;
+    margin-top: -50px;
+    background-color: var(--dark-blue);   
+    color: var(--white);
+    border-radius: 2px;
+    font-family: "Public Sans", system-ui;
+    font-size: 16px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+
+.presentation-wrapper {
+    margin: 90px auto;
+}
+
+.description {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.profile-image {
+    margin: auto;
+    width: 100%;
+}
+
+.see-portfolio {
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: 40px 0;   
+    padding: 15px 35px;
+    color: var(--grayish-dark-blue);
+    background-color: var(--white);
+    border-radius: 2px;
+    font-family: "Public Sans", system-ui;
+    font-size: 16px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    letter-spacing: 1px;
+
+}
+
+.contact-call-to-action {
+    display: block;
 }
 
 /*  -------------------------------------
@@ -222,22 +271,40 @@ li {
         align-items: flex-end;
     }
     
-    .red-box {
-        width: 500px;
-        height: 200px;
-        background-color: rgb(213, 24, 68);
+    .text-box {
+        position: relative;
+        margin-top: -300px;
+        width: 514px;
+        height: 300px;
         display: flex;
         flex-wrap: wrap;
         align-items: flex-end;
+        background-color: var(--white);
+    }
+
+    h1 {
+        /*Ibarra Real Nova Bold, 50px, 50px Line, -0,45 Character */
+        font-size: 50px;
+        line-height: 52px;
     }
     
-    .green-box {
-        display: block;
-        width: 100px;
-        height: 50px;
-        background-color: green;
+
+    .presentation-wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
     }
-    
+
+    .contact-call-to-action {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+ 
 
 }
 
