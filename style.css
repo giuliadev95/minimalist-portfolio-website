@@ -14,6 +14,7 @@
     --norma: normal;
 }
 
+/* Global components */
 *{
     /*border: 1px solid red;*/
     scroll-behavior: smooth;
@@ -30,43 +31,27 @@ a, button{
     cursor: pointer;
 }
 
-h1 {
-    font-family: "Ibarra Real Nova", serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal; 
-    font-size: 50px;
-    line-height: 50px;
-    color: (var((--grayish-dark-blue)));
+a {
+    text-decoration: none;
 }
 
-h2 {
-    font-family: "Ibarra Real Nova", serif;
-    font-optical-sizing: auto;
-    font-weight: bold;
-    font-style: normal; 
-    font-size: 40px;
-    line-height: 42px;
-    margin: 40px 0px;
+.go-to-about-me a {
+    color: var(--white);
+}
+
+.see-portfolio a {
     color: var(--grayish-dark-blue);
 }
 
+/* hr lines */
 .top-line {
     margin-top: 40px;
+    height: 1px;
     background-color: var(--light-grey-text-field);
 }
 
 .bottom-line {
+    height: 1px;
     background-color: var(--light-grey-text-field);
-}
-
-.about-me-paragraph {
-    font-family: "Public Sans", serif;
-    font-optical-sizing: auto;
-    font-weight: lighter;
-    font-style: normal;
-    line-height: 30px ;
-    font-size: 18px;
-    color: var(--dark-blue);
-    margin: 0;
+    
 }

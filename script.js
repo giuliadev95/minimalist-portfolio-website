@@ -1,4 +1,6 @@
-/* SHOW/HIDE HAMBURGER MENU */
+/*  ------------------------
+    SHOW/HIDE HAMBURGER MENU 
+    ------------------------ */
 document.addEventListener("DOMContentLoaded", function() {
     const HAMBURGER_ICON = document.querySelector(".hamburger-container");
     const HEADER = document.getElementById("header");
@@ -33,45 +35,131 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-/* CHANGE SOURCE OF HERO IMAGE ON DESKTOP */
+/*  --------------------------------------------------------------------------------------------
+    CHANGE THE SOURCE OF IMAGES (TABLET / DESKTOP/ DEFAULT MOBILE) DEPENDING ON ON WINDOW WIDTH:
+    --------------------------------------------------------------------------------------------
+    HERO IMAGE 
+    ------------ */
 var desktop_image = document.querySelector(".hero-image");
 function replacePattern() {
 
     var windowWidth = window.innerWidth || document.documentElement.clientWidth;
     console.clear();
-    console.log(desktop_image.src);
 
     if(windowWidth >= 768 && windowWidth < 1024) {
-        desktop_image.src = "./images/homepage/tablet/image-homepage-hero@2x.jpg"
-        console.log(desktop_image.src);
+        desktop_image.src = "./images/homepage/tablet/image-homepage-hero.jpg";
+        console.log(`hero-image src: ${desktop_image.src}`);
     }
     else if (windowWidth >= 1024) {
-        desktop_image.src= "./images/homepage/desktop/image-homepage-hero@2x.jpg";
-        console.log(desktop_image.src);
+        desktop_image.src= "./images/homepage/desktop/image-homepage-hero.jpg"; 
+        console.log(`hero-image src: ${desktop_image.src}`);
     } else {
-        desktop_image.src = " ./images/homepage/mobile/image-homepage-hero@2x.jpg"
+        desktop_image.src = " ./images/homepage/mobile/image-homepage-hero.jpg";
+        console.log(`hero-image src: ${desktop_image.src}`);
     }
 }
 
 replacePattern();
 window.addEventListener('resize', replacePattern);
 
-/*
-funzione modulare:
-function replaceSrc(mobile, tablet, desktop) {
-     if(windowWidth >= 768 && windowWidth < 1024) {
-        desktop_image.src = tablet
-        console.log(desktop_image.src);
+    
+/*  ------------------------
+    ABOUT ME IMAGE 
+    ------------------------ */
+var profile_image = document.querySelector(".profile-image");
+function replacePortrait() {
+
+    var windowWidth = window.innerWidth || document.documentElement.clientWidth;
+
+    if(windowWidth >= 768 && windowWidth < 1024) {
+        profile_image.src = "./images/homepage/tablet/image-homepage-profile.jpg";
+        console.log(`profile-image src: ${profile_image.src}`);
     }
     else if (windowWidth >= 1024) {
-        desktop_image.src= desktop
-        console.log(desktop_image.src);
+        profile_image.src= "./images/homepage/desktop/image-homepage-profile.jpg"; 
+        console.log(`profile-image src: ${profile_image.src}`);
     } else {
-        desktop_image.src = mobile
+        profile_image.src = " ./images/homepage/mobile/image-homepage-profile.jpg";
+        console.log(`profile-image src: ${profile_image.src}`);
     }
 }
-}
-*/
+
+replacePortrait();
+window.addEventListener('resize', replacePortrait);
+
+
+/*  ------------------------
+    "MANAGE" PROJECT IMAGE 
+    ------------------------ */
+    var manage_image = document.querySelector(".manage");
+    function replaceManage() {
+    
+        var windowWidth = window.innerWidth || document.documentElement.clientWidth;
+    
+        if(windowWidth >= 768 && windowWidth < 1024) {
+            manage_image.src = "./images/portfolio/tablet/image-portfolio-manage.jpg";
+            console.log(`manage src: ${profile_image.src}`);
+        }
+        else if (windowWidth >= 1024) {
+            manage_image.src= "./images/portfolio/desktop/image-portfolio-manage.jpg"; 
+            console.log(`manage src: ${profile_image.src}`);
+        } else {
+            manage_image.src = " ./images/portfolio/mobile/image-portfolio-manage.jpg";
+            console.log(`manage src: ${profile_image.src}`);
+        }
+    }
+    
+    replaceManage();
+    window.addEventListener('resize', replaceManage);
+
+    /*  ------------------------
+    "INSURE" PROJECT IMAGE 
+    ------------------------ */
+    var insure_image = document.querySelector(".insure");
+    function replaceInsure() {
+    
+        var windowWidth = window.innerWidth || document.documentElement.clientWidth;
+    
+        if(windowWidth >= 768 && windowWidth < 1024) {
+            insure_image.src = "./images/portfolio/tablet/image-portfolio-insure.jpg";
+            console.log(`manage src: ${insure_image.src}`);
+        }
+        else if (windowWidth >= 1024) {
+            insure_image.src= "./images/portfolio/desktop/image-portfolio-insure.jpg"; 
+            console.log(`manage src: ${insure_image.src}`);
+        } else {
+            insure_image.src = " ./images/portfolio/mobile/image-portfolio-insure.jpg";
+            console.log(`manage src: ${insure_image_image.src}`);
+        }
+    }
+    
+    replaceInsure();
+    window.addEventListener('resize', replaceInsure);
+
+    /*  ------------------------
+    "BOOKMARK" PROJECT IMAGE 
+    ------------------------ */
+    var bookmark_image = document.querySelector(".bookmark");
+    function replaceBookmark() {
+    
+        var windowWidth = window.innerWidth || document.documentElement.clientWidth;
+    
+        if(windowWidth >= 768 && windowWidth < 1024) {
+            bookmark_image.src = "./images/portfolio/tablet/image-portfolio-bookmark.jpg";
+            console.log(`manage src: ${bookmark_image.src}`);
+        }
+        else if (windowWidth >= 1024) {
+            bookmark_image.src= "./images/portfolio/desktop/image-portfolio-bookmark.jpg"; 
+            console.log(`manage src: ${bookmark_image}`);
+        } else {
+            bookmark_image.src = " ./images/portfolio/mobile/image-portfolio-bookmark.jpg";
+            console.log(`manage src: ${bookmark_image.src}`);
+        }
+    }
+    
+    replaceBookmark();
+    window.addEventListener('resize', replaceBookmark);
+    
 
 
 

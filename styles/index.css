@@ -1,0 +1,557 @@
+#header {
+    margin-top: 40px;
+}
+
+#header.active {
+    height: 100vh;
+}
+
+/*  ---------------
+    NAVIGATION MENU
+    --------------- */
+
+.navigation-menu-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+/*  -----
+    LOGO
+    ----- */
+
+#logo {
+    background-color: none;
+    display: inline-block;
+    animation: float 3s ease-in-out infinite;
+    animation-iteration-count: 5;
+}
+
+#logo:focus-visible
+    {
+    border: 3px solid var(--slightly-desaturated-cyan);
+    outline: none;
+    border-radius: 2px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+    }
+
+    50% {
+        transform: translateY(+7px); 
+    }
+    
+    100% {
+        transform: translateY(0); 
+    }
+}
+
+/*  --------------
+    HAMBURGER MENU
+    -------------- */
+
+.hamburger-container {
+    padding: 0px;
+    background: none;
+    border: none;
+    
+}
+
+.hamburger-container:focus-visible {
+    border: 3px solid var(--slightly-desaturated-cyan);
+    outline: none;
+    border-radius: 2px;
+}
+
+.hamburger-container > span {
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: black;
+    margin: 6px 0;
+    border-radius: 2px;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    
+}
+
+.hamburger-container.active .hamburger-bar-1 {
+
+        transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-container.active .hamburger-bar-2 {
+        display: none;
+    }
+
+.hamburger-container.active .hamburger-bar-3 {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.navigation-links {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    align-self: center;
+    background-color: var(--grayish-dark-blue);
+    transition: opacity 0.5s ease, visibility 0.5s ease, height 0.5s ease, padding 0.5s ease;
+}
+
+li {
+    margin-bottom:25px;
+    list-style: none;
+    text-align: center;
+}
+    
+.navigation-links.active {
+    opacity: 1;
+    visibility: visible;
+    height: 300px;
+    padding: 60px;
+    transition: opacity 0.5s ease, visibility 0.5s ease, height 0.5s ease, padding 0.5s ease;
+}
+
+.navigation-links:not(.active) {
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+    padding: 0;
+    transition: opacity 0.5s ease, visibility 0.5s ease, height 0.5s ease, padding 0.5s ease;
+}
+.navigation-links a {
+        display: inline-block;
+        width: 100%;
+        margin: 0px;
+        border-radius: 2px;
+        font-family: "Public Sans", system-ui;
+        font-size: 16px;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 30px;
+        text-decoration: none;
+        color: var(--white);
+    }
+
+.navigation-links a:hover, .navigation-links a:focus-visible {
+    background-color: var(--slightly-desaturated-cyan);
+    outline: none;
+}
+
+/*  ---------------------
+    TABLET / DESKTOP MENU
+    --------------------- */
+
+.desktop-navigation-links {
+    display:none;
+}
+
+
+.desktop-navigation-links a {
+    text-decoration: none;
+    font-family: "Public Sans", system-ui;
+    font-size: 16px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    color: var(--grayish-dark-blue);
+}
+
+.desktop-navigation-links a:focus-visible {
+    padding: 5px;
+    outline: none;
+    border: 3px solid var(--slightly-desaturated-cyan);
+    border-radius: 2px;
+}
+ 
+.desktop-navigation-links a:hover {
+      color: var(--slightly-desaturated-cyan);
+    }
+
+/*  ---------------------
+    MAIN SECTION
+    -------------
+    HERO SECTION
+    --------------------- 
+    */
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
+
+.text-box {
+    display: block;
+    width: 514px;
+    height: 278px;  
+}
+
+.go-to-about-me {
+    width: 150px;
+    height: 50px;
+    position: relative;
+    margin-top: -50px;
+    background-color: var(--dark-blue);   
+    color: var(--white);
+    border: 1px solid var(--dark-blue);
+    border-radius: 2px;
+    font-family: "Public Sans", system-ui;
+    font-size: 16px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+/*  -------------
+    ABOUT ME
+    ------------- */
+
+.presentation-wrapper {
+    margin: 90px auto;
+}
+
+.text-box {
+    width: auto;
+    height: fit-content;
+    margin: 0;
+    display: block;
+    text-align: left;
+}
+
+.profile-image {
+    margin: 0px 0px 30px 0px;
+    width: 100%;
+    height: auto;
+}
+
+.about-me-paragraph {
+    font-family: "Public Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    line-height: 30px ;
+    font-size: 18px;
+    color: var(--dark-blue);
+    margin: 0;
+}
+
+.see-portfolio {
+    width: 200px;
+    height: 50px;
+    margin: 40px 0;   
+    padding: 0px;
+    color: var(--grayish-dark-blue);
+    background-color: var(--white);
+    border: 1px solid var(--grayish-dark-blue);
+    border-radius: 2px;
+    font-family: "Public Sans", system-ui;
+    font-size: 16px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.contact-call-to-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-family: "Ibarra Real Nova", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal; 
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: -0.36px;
+    color: (var(--grayish-dark-blue));
+}
+
+h2 {
+    font-family: "Ibarra Real Nova", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal; 
+    font-size: 40px;
+    line-height: 42px;
+    margin: 40px 0px;
+    color: var(--grayish-dark-blue);
+}
+
+/*
+    -----------
+    PORTFOLIO
+    -----------
+*/
+
+.single-project-container {
+    margin: 40px auto;
+    display: grid;
+    justify-self: flex-start;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.project-h3, .project-h3-lg {
+    margin: 0px;
+    justify-self: left;
+    font-family: "Ibarra Real Nova", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal; 
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.29px;
+    color: (var(--grayish-dark-blue));
+
+}
+
+.manage, .insure, .bookmark {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.single-project-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    height: 100%;
+    width: auto;
+}
+
+.project-h3-lg {
+    display: none;
+}
+
+.single-project-paragraph {
+    font-family: "Public Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: lighter;
+    font-style: normal;
+    line-height: 30px;
+    font-size: 18px;
+    color: var(--dark-blue);
+    margin: 0;
+}
+
+.see-live-project {
+    width: 200px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    color: var(--grayish-dark-blue);
+    background-color: var(--white);
+    border: 1px solid var(--grayish-dark-blue);
+    border-radius: 2px;
+    font-family: "Public Sans", system-ui;
+    font-size: 16px;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+/*  -------------------------------
+    MEDIA QUERY FOR TABLET > 768px
+    ------------------------------- */
+    
+@media screen and (min-width: 768px) {
+
+    /*
+    -----------
+    HEADER
+    -----------
+    */
+    .hamburger-container {
+        display: none;
+    }
+
+    .desktop-navigation-links {
+        display: flex;
+        column-gap: 30px;
+    }
+
+    /*
+    ---------
+    HERO
+    ---------
+    */
+    .hero-image {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+    }
+    
+    .text-box { /* TABLET */
+        position: relative;
+        width: 514px;
+        height: 278px;
+        margin-top: -278px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        background-color: var(--white);
+    }
+    
+    h1 {
+        margin-right: 30px;
+    }
+
+    /*
+    ----------
+    ABOUT ME
+    ---------- */
+    .presentation-wrapper {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 100px;
+    }
+
+    .profile-image {
+        margin: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .description {
+        display: inline-grid;
+        grid-gap: 10px;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        align-content: space-between;
+    }
+
+    .hr-line {
+        margin: 0px;
+        color: var(--light-grey-text-field);
+        height: 1px;
+        width: 100%;
+    }
+
+    .contact-call-to-action {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /*
+    ----------
+    PORTFOLIO
+    ----------
+    */
+    .single-project-container {
+        margin: 90px 0;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 100px;
+        grid-template-areas: 
+        "a b"; 
+}
+
+    .manage, .bookmark {
+        grid-area: a; 
+    }
+
+    .single-project-description {
+        grid-area: b;
+    }
+
+    .reverse {
+        grid-template-areas: 
+            "b a";
+    }
+
+    .project-h3 {
+        display: none;
+    }
+
+    .project-h3-lg {
+    display: inline;
+    margin: 0px;
+    justify-self: left;
+    font-family: "Ibarra Real Nova", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal; 
+    font-size: 32px;
+    line-height: 36px;
+    letter-spacing: -0.29px;
+    color: (var(--grayish-dark-blue));
+    }
+
+    .manage, .insure, .bookmark {
+        margin: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .single-project-description {
+        display: inline-grid;
+        grid-gap: 30px;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        align-content: space-between;
+    }
+
+    .project-divider {
+        margin: 0px;
+        color: var(--light-grey-text-field);
+        height: 1px;
+        width: 100%;
+    }
+
+}
+
+
+
+/*  ----------------------------------
+    MEDIA QUERY FOR DESKTOP > 1024px  
+    ---------------------------------- */
+@media screen and (min-width: 1024px) {
+
+    .text-box {
+        margin-top: -357px ;
+        height: 357px;
+        width: 445px;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 50px;
+        letter-spacing: -0.45px;
+    }
+
+} 
+

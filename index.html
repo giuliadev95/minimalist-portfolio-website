@@ -7,9 +7,7 @@
   <link rel="icon" type="image/x-icon" href="./images/favicon-32x32.png">
   <!-- Link to stylesheets -->
   <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./styles/header.css">
-  <link rel="stylesheet" href="./styles/main.css">
-  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/index.css">
   <!-- Link to Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,22 +45,25 @@
         <li> <a href="#contact" tabindex="0"> CONTACT</a> </li>
       </ul>
     </header>
-
     <main id="main">
-      <section id="about">
+      <section id="hero">
         <img src="" alt="" class="hero-image"/>
           <div class="text-box">
             <h1 tabindex="0">
               Hey, I’m Alex Spencer and I love building beautiful websites
             </h1>
-            <button type="button" class="go-to-about-me" tabindex="0"> ABOUT ME </button> <!-- button must bring to ablout-me section with a smooth scroll -->
-          </div>  
+            <button type="button" class="go-to-about-me" tabindex="0">
+              <a href="#about">ABOUT ME</a>
+            </button> <!-- button must bring to ablout-me section with a smooth scroll -->
+          </div> 
+      </section>
+      <section id="about">
           <div class="presentation-wrapper">
-            <img src="./images/homepage/mobile/image-homepage-profile.jpg" alt="" class="profile-image">
-            <div>
-              <hr class="top-line">
+            <img src="" alt="" class="profile-image">
+            <div class="description">
+              <hr class="hr-line">
               <h2 tabindex="0">
-                About me
+                # About me
               </h2>
               <p class="about-me-paragraph" tabindex="0">
                 I’m a junior front-end developer looking for a new role in an exciting company. 
@@ -73,20 +74,70 @@
                 I love being out in nature whether that’s going for a walk, run or cycling. I’d love 
                 you to check out my work.
               </p>
-              <button type="button" class="see-portfolio" tabindex="0"> GO TO PORTFOLIO </button> <!-- button must bring to portfolio section with a smooth scroll -->
-              <hr class="bottom-line">
+              <button type="button" class="see-portfolio" tabindex="0"> 
+                <a href="#portfolio"> GO TO PORTFOLIO </a>
+              </button> <!-- button must bring to portfolio section with a smooth scroll -->
+              <hr class="hr-line">
             </div>
           </div>  
-          <div class="contact-call-to-action">
-            <h3>
-              Interested in doing a project together?
-            </h3>
-            <button type="button" class="see-portfolio" tabindex="0"> CONTACT ME</button> <!-- button must bring to portfolio section with a smooth scroll -->
-          </div>
       </section>
-      <section id="portfolio"> 
+      <section id="portfolio">
+        <h2 tabindex="0">
+          # My Portfolio
+        </h2>
+        <!-- 1 -->
+        <div class="single-project-container reverse">
+          <h3 tabindex="0" class="project-h3">Manage</h3>
+          <img class="manage" src="" alt=""/>
+          <div class="single-project-description">
+            <hr class="project-divider"/>
+            <h3 tabindex="0" class="project-h3-lg">Manage</h3>
+            <h3 tabindex="0" class="project-h3">Project overview</h3>
+            <p class="single-project-paragraph" tabindex="0">
+              This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.
+            </p>
+            <button type="button" class="see-live-project" tabindex="0">LIVE WEBSITE</button>
+            <hr class="project-divider"/>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="single-project-container">
+          <h3 tabindex="0" class="project-h3">Insure</h3>
+          <img class="insure" src="" alt=""/>
+          <div class="single-project-description">
+            <hr class="project-divider"/>
+            <h3 tabindex="0" class="project-h3-lg">Insure</h3>
+            <h3 tabindex="0" class="project-h3">Project overview</h3>
+            <p class="single-project-paragraph" tabindex="0">
+              This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.
+            </p>
+            <button type="button" class="see-live-project" tabindex="0">LIVE WEBSITE</button>
+            <hr class="project-divider"/>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="single-project-container reverse">
+          <h3 tabindex="0" class="project-h3">Bookmark</h3>
+          <img class="bookmark" src="" alt="">
+          <div class="single-project-description">
+            <hr class="project-divider"/>
+            <h3 tabindex="0" class="project-h3-lg">Bookmark</h3>
+            <h3 tabindex="0" class="project-h3">Project overview</h3>
+            <p class="single-project-paragraph" tabindex="0">
+              This project required me to build a fully responsive landing page to the designs provided. I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such as the testimonial slider.
+            </p>
+            <button type="button" class="see-live-project" tabindex="0">LIVE WEBSITE</button>
+            <hr class="project-divider"/>
+          </div>
+        </div>
       </section>
       <section id="contact">
+        <div class="contact-call-to-action">
+          <h3>
+            Interested in doing a project together?
+          </h3>
+          <button type="button" class="see-portfolio" tabindex="0"> CONTACT ME</button> <!-- button must bring to portfolio section with a smooth scroll -->
+        </div>
       </section>
     </main>
     <footer id="footer"></footer>
