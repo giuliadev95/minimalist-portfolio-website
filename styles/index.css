@@ -270,6 +270,12 @@ li {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+}
+
+.contact-call-to-action button {
+    margin: 0px;
+    width: 180px;
 }
 
 .project-container {
