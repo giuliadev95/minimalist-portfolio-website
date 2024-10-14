@@ -3,14 +3,21 @@
 This is a solution to the [Minimalist portfolio website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/minimalist-portfolio-website-LMy-ZRyiE). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 
-## Live website
-
-See the live website [here ](https://minimalist-static-portfolio.netlify.app/).
 
 
 ## Project Overview
 
 This project is a minimalist portfolio website created to showcase my web development skills. It emphasizes responsive design, accessibility, and dynamic interactivity using HTML5, CSS3, and JavaScript. The website uses a mobile-first approach and incorporates CSS Grid for flexible layout management across different screen sizes. Throughout this project, I focused on best practices for modern front-end development, improving performance and ensuring the website is visually appealing and user-friendly on various devices.
+
+
+## Live website
+
+See the live website [here ](https://minimalist-static-portfolio.netlify.app/).
+
+
+### Screenshot
+
+![](./images/screenshot/Screenshot.png)
 
 
 ## Features
