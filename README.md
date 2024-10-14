@@ -5,7 +5,7 @@ This is a solution to the [Minimalist portfolio website challenge on Frontend Me
 
 ## Live website
 
-[See the live website here: ](https://www.frontendmentor.io/challenges/minimalist-portfolio-website-LMy-ZRyiE)
+[See the live website here: ](https://minimalist-static-portfolio.netlify.app/)
 
 
 ## Project Overview
