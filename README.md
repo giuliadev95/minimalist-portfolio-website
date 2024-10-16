@@ -7,7 +7,7 @@ This is a solution to the [Minimalist portfolio website challenge on Frontend Me
 
 ## Project Overview
 
-This project is a minimalist portfolio website created to showcase my web development skills. It emphasizes responsive design, accessibility, and dynamic interactivity using HTML5, CSS3, and JavaScript. The website uses a mobile-first approach and incorporates CSS Grid for flexible layout management across different screen sizes. Throughout this project, I focused on best practices for modern front-end development, improving performance and ensuring the website is visually appealing and user-friendly on various devices.
+This project is a minimalist portfolio website created to showcase my web development skills. It emphasizes responsive design and dynamic interactivity using HTML5, CSS3, and JavaScript. The website uses a mobile-first approach and incorporates CSS Grid for flexible layout management across different screen sizes. Throughout this project, I focused on best practices for modern front-end development, improving performance and ensuring the website is visually appealing and user-friendly on various devices.
 
 
 ## Live website
@@ -38,11 +38,4 @@ See the live website [here ](https://minimalist-static-portfolio.netlify.app/).
 	•	JavaScript is used to dynamically change image sources based on the current screen size, ensuring that the appropriate image is loaded for mobile, tablet, or desktop devices.
 	•	The hamburger menu is implemented for smaller screens, allowing for a collapsible navigation bar. Clicking the menu icon toggles the visibility of the navigation links.
 	•	Smooth scrolling functionality is added to buttons such as “Go to About Me” and “Go to Portfolio”, enhancing the user experience.
-	•	Form validation is implemented to ensure that required fields in the contact form are properly validated before submission.
-
-4. Accessibility
-
-	•	The website includes ARIA labels, focus states, and semantic HTML5 elements to improve accessibility for all users, including those using screen readers.
-	•	Focus management is applied to ensure that keyboard users can navigate easily through the page, with clear visual cues on focusable elements.
-
 
