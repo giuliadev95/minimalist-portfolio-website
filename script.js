@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     replacePattern();
-    window.addEventListener('resize', replacePattern);
+    window.addEventListener('resize', replacePattern); 
 
 
     /*  ----------------------------
