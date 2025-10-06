@@ -2,7 +2,7 @@
 
 # Frontend Mentor - Minimalist portfolio website solution
 
-This is a solution to the [Minimalist portfolio website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/minimalist-portfolio-website-LMy-ZRyiE). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the <a href="https://www.frontendmentor.io/challenges/minimalist-portfolio-website-LMy-ZRyiE" target="_blank">Minimalist portfolio website challenge on Frontend Mentor</a>. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 
 ## Project Overview
